@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вітрина</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Вітрина Овочів</h1>
+    </header>
+
+    <main>
+        <section class="showcase interactive-showcase">
+            <h2>Вітрина 1: Інтерактивна</h2>
+            <div class="interactive">
+                <img src="img/carrot.jpg" alt="Морква" class="item" data-description="Морква - це коренеплід, багатий на вітаміни А і К.">
+                <img src="img/tomato.jpg" alt="Помідор" class="item" data-description="Помідор - це соковитий овоч, багатий на лікопен.">
+                <img src="img/cucumber.jpg" alt="Огірок" class="item" data-description="Огірок - освіжаючий овоч, що складається на 95% з води.">
+            </div>
+            <p class="details"></p>
+        </section>
+
+        <section class="showcase static-showcase">
+            <h2>Вітрина 2: Статична</h2>
+            <div class="static-gallery">
+                <img src="img/pepper.jpg" alt="Перець">
+                <img src="img/broccoli.jpg" alt="Броколі">
+                <img src="img/potato.jpg" alt="Картопля">
+            </div>
+            <hr>
+            <p class="description">
+                Перець - гострий та солодкий овоч, багатий на вітамін C.
+            </p>
+            <hr>
+            <p class="description">
+                Броколі - зелений овоч, відомий своїми антиоксидантними властивостями.
+            </p>
+            <hr>
+            <p class="description">
+                Картопля - основний продукт харчування, багатий на вуглеводи.
+            </p>
+        </section>
+
+        <section class="showcase custom-showcase">
+            <h2>Вітрина 3: Додавання зображень (клік кнопки додає, клік зображення видаляє)</h2>
+            <div class="image-selection">
+                <button class="select-image">Додати зображення</button>
+                <div class="image-grid" style="display: none;">
+                    <img src="img/carrot.jpg" alt="Морква" data-src="img/carrot.jpg">
+                    <img src="img/tomato.jpg" alt="Помідор" data-src="img/tomato.jpg">
+                    <img src="img/cucumber.jpg" alt="Огірок" data-src="img/cucumber.jpg">
+                    <img src="img/pepper.jpg" alt="Перець" data-src="img/pepper.jpg">
+                    <img src="img/broccoli.jpg" alt="Броколі" data-src="img/broccoli.jpg">
+                    <img src="img/potato.jpg" alt="Картопля" data-src="img/potato.jpg">
+                </div>
+            </div>
+            <div class="custom-items"></div>
+
+        </section>
+    </main>
+
+    <footer>
+        <center><p>&copy; 2024 Вітрина. Всі права захищені.</p></center>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
